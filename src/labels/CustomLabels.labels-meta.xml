@@ -3,7 +3,7 @@
     <labels>
         <fullName>Welcome_Message</fullName>
         <language>en_US</language>
-        <protected>true</protected>
+        <protected>false</protected>
         <shortDescription>This label is used for the welcome message displayed to new users.</shortDescription>
         <value>Welcome to our Salesforce application! We hope you have a great experience.</value>
     </labels>
