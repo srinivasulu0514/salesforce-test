@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
-    <labels>
-        <fullName>Welcome_Message</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
+        <labels>
+            <fullName>Welcome_Message</fullName>
+            <language>en_US</language>
+            <protected>true</protected>
         <shortDescription>This label is used for the welcome message displayed to new users.</shortDescription>
         <value>Welcome to our Salesforce application! We hope you have a great experience.</value>
     </labels>
