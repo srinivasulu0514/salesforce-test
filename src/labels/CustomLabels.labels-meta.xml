@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
-        <fullName>POC_label</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>POC label</shortDescription>
-        <value>10</value>
-    </labels>
-    <labels>
-        <fullName>POC_label_2</fullName>
-        <language>en_US</language>
-        <protected>true</protected>
-        <shortDescription>POC label 2</shortDescription>
-        <value>3000</value>
-    </labels>
-    <labels>
         <fullName>Welcome_Message</fullName>
         <language>en_US</language>
         <protected>true</protected>
