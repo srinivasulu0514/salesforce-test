@@ -15,6 +15,13 @@
         <value>Country-India</value>
     </labels>
     <labels>
+        <fullName>test_customlabel_for_POC</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>test customlabel for POC</shortDescription>
+        <value>true</value>
+    </labels>
+    <labels>
         <fullName>title_name</fullName>
         <language>en_US</language>
         <protected>true</protected>
