@@ -1,0 +1,26 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "UserInfo" : {
+      "title" : "userInfo",
+      "description" : "A summary of the specified user, including the user's ID, username, and full name.",
+      "lightning:type" : "lightning__recordInfoType",
+      "lightning:isPII" : true,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true
+    },
+    "privileges" : {
+      "title" : "Privileges",
+      "description" : "A list of the returned permissions or access controls, and the features that grant the privilege, if applicable.",
+      "items" : {
+        "lightning:type" : "adminCopilot__privilege"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType",
+  "lightning:textIndexed" : true
+}
