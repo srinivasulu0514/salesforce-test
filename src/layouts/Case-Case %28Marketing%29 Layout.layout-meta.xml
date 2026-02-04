@@ -91,14 +91,6 @@
                 <behavior>Edit</behavior>
                 <field>Reason</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>stringlength__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>age__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -235,13 +227,16 @@
             <quickActionName>Case.LogACall</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
+            <quickActionName>FeedItem.LinkPost</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>Case.CaseComment</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
             <quickActionName>Case.ChangeStatus</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>FeedItem.ContentPost</quickActionName>
-        </quickActionListItems>
-        <quickActionListItems>
-            <quickActionName>FeedItem.LinkPost</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>FeedItem.PollPost</quickActionName>

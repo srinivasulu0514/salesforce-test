@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>v1</fullName>
+    <articleAnswersGPTEnabled>false</articleAnswersGPTEnabled>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>Hi! I’m an AI assistant, here to help you troubleshoot user access, look for answers in Salesforce Help, easily create report types, and more.</message>
+                <messageIdentifier>24a848aa-d68e-4675-9a3d-1198406672ac</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>cfed6622-b7bd-48b8-b89a-ba1753a07713</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>51176575-342d-4081-9ea3-388f639f6dd3</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Welcome</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Hi! I&apos;m your helpful bot.</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <botDialogs>
+        <botSteps>
+            <botMessages>
+                <message>Unfortunately, a system error occurred. Let us start again.</message>
+                <messageIdentifier>491a6fe4-6ffe-4c58-a9fd-b2bc727ee3e4</messageIdentifier>
+            </botMessages>
+            <stepIdentifier>2e3540c1-4bcc-4e88-8d54-d668e4e58718</stepIdentifier>
+            <type>Message</type>
+        </botSteps>
+        <botSteps>
+            <stepIdentifier>0235d05b-943d-4ae3-9c5e-d432a5518817</stepIdentifier>
+            <type>Wait</type>
+        </botSteps>
+        <developerName>Error_Handling</developerName>
+        <isPlaceholderDialog>false</isPlaceholderDialog>
+        <label>Unfortunately, a system error occurred. Let us start again.</label>
+        <showInFooterMenu>false</showInFooterMenu>
+    </botDialogs>
+    <citationsEnabled>false</citationsEnabled>
+    <company>Your Company</company>
+    <conversationDefinitionPlanners>
+        <genAiPlannerName>Agent_for_Setup</genAiPlannerName>
+    </conversationDefinitionPlanners>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>This variable may also be referred to as VerifiedCustomerId</description>
+        <developerName>VerifiedCustomerId</developerName>
+        <includeInPrompt>false</includeInPrompt>
+        <label>VerifiedCustomerId</label>
+        <visibility>Internal</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>The ID of a setup page that the user is currently viewing.</description>
+        <developerName>setupPageId</developerName>
+        <includeInPrompt>false</includeInPrompt>
+        <label>setupPageId</label>
+        <visibility>External</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>The API name of the Salesforce object that the user is viewing in the object detail page in Setup. Do not use this if the user is already talking about another Salesforce object in the conversation.</description>
+        <developerName>currentObjectApiName</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>currentObjectApiName</label>
+        <visibility>External</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>This variable defines the type of formula, which can be one of &apos;CustomField&apos;, &apos;ValidationRule&apos;, or &apos;DefaultValue&apos;. Always use the most recent formulaType value and disregard any previous versions. If the user specifies a different type of formula during t</description>
+        <developerName>formulaType</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>formulaType</label>
+        <visibility>External</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>The API name of the field of a Salesforce object that the user is viewing in the object field detail page in Setup. Do not use this field if user is already talking about another field in the conversation.</description>
+        <developerName>currentField</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>currentField</label>
+        <visibility>External</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>This variable holds the formula to be used. This value should never be edited/updated and should be used as it is. Always use the most recent formula provided, and ignore any previous versions. If the user specifies a different formula during the conversa</description>
+        <developerName>formula</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>formula</label>
+        <visibility>External</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>The unique ID of the connected app used for migrating it to an external client app (ECA) or for summarizing the connected app details. This ID is sourced from the current connected app page in Setup and should be used only if the user has not explicitly m</description>
+        <developerName>applicationId</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>applicationId</label>
+        <visibility>External</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>The ID of the user record that is currently viewed in the user setup page. Do not use this if the user is already talking about another user record in the conversation.</description>
+        <developerName>userId</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>userId</label>
+        <visibility>External</visibility>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <description>This variable specifies the return type of the formula, which can be one of &apos;Text&apos;, &apos;Number&apos;, &apos;Date&apos;, &apos;Boolean&apos;, &apos;Currency&apos;, &apos;DateTime&apos;, &apos;Percent&apos;, or &apos;Time&apos;. Always use the most recent returnType value and disregard any previous versions. If the user spe</description>
+        <developerName>returnType</developerName>
+        <includeInPrompt>true</includeInPrompt>
+        <label>returnType</label>
+        <visibility>External</visibility>
+    </conversationVariables>
+    <entryDialog>Welcome</entryDialog>
+    <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
+    <intentV3Enabled>false</intentV3Enabled>
+    <knowledgeActionEnabled>false</knowledgeActionEnabled>
+    <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
+    <role>You help users with administrative tasks in setup, such as troubleshooting user access and finding answers in Salesforce Help.</role>
+    <smallTalkEnabled>false</smallTalkEnabled>
+    <staticPromptsEnabled>false</staticPromptsEnabled>
+    <stopRecPrompts>false</stopRecPrompts>
+    <stopWelcomePrompts>false</stopWelcomePrompts>
+    <surfacesEnabled>false</surfacesEnabled>
+    <toneType>Casual</toneType>
+</BotVersion>

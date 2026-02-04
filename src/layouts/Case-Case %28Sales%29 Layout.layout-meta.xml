@@ -83,14 +83,6 @@
                 <behavior>Edit</behavior>
                 <field>Reason</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>stringlength__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>age__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -233,6 +225,9 @@
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>Case.LogACall</quickActionName>
+        </quickActionListItems>
+        <quickActionListItems>
+            <quickActionName>Case.CaseComment</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>Case.ChangeStatus</quickActionName>
