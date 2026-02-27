@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>Integration_User_Access</members>
+    <name>PermissionSet</name>
+  </types>
+  <types>
+    <members>CRM_Sales_Support</members>
+    <name>PermissionSetGroup</name>
+  </types>
+<version>66.0</version></Package>
