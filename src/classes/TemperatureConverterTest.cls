@@ -10,7 +10,7 @@ private class TemperatureConverterTest {
  }
  @isTest static void testBoilingPoint() {
    Decimal celsius = TemperatureConverter.FahrenheitToCelsius(212);
-   System.assertEquals(100,celsius,'Boiling Point TemPerature is Noooot expected.');
+   System.assertEquals(100,celsius,'Boiling Point TemPerature is Noot expected.');
  }
  @isTest static void testNegativeTemp() {
    Decimal celsius = TemperatureConverter.FahrenheitToCelsius(-10);
