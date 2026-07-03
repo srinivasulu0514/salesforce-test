@@ -10,7 +10,7 @@
         <criteriaItems>
             <field>Account.BillingCountry</field>
             <operation>equals</operation>
-            <value>India</value>
+            <value>US</value>
         </criteriaItems>
         <description>The Country has to be &quot;India&quot;</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
