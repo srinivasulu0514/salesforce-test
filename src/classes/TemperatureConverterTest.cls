@@ -1,19 +1,30 @@
 @isTest
 private class TemperatureConverterTest {
- @isTest static void testWarmTemp() {
-   Decimal celsius = TemperatureConverter.FahrenheitToCelsius(70);
-   System.assertEquals(21.11,celsius);
- }
- @isTest static void testFreezingPoint() {
-   Decimal celsius = TemperatureConverter.FahrenheitToCelsius(32);
-   System.assertEquals(0,celsius);
- }
- @isTest static void testBoilingPoint() {
-   Decimal celsius = TemperatureConverter.FahrenheitToCelsius(212);
-   System.assertEquals(100,celsius,'boiling point temperature is not expected.');
- }
- @isTest static void testNegativeTemp() {
-   Decimal celsius = TemperatureConverter.FahrenheitToCelsius(-10);
-   System.assertEquals(-23.33,celsius);
- }
+
+    @isTest
+    static void testFreezingPoint() {
+        // 1. Arrange & Act
+        Decimal result = TemperatureConverter.fahrenheitToCelsius(32);
+        
+        // 2. Assert
+        System.assertEquals(0, result, '32F should be 0C');
+    }
+
+    @isTest
+    static void testBoilingPoint() {
+        // 1. Arrange & Act
+        Decimal result = TemperatureConverter.fahrenheitToCelsius(212);
+        
+        // 2. Assert
+        System.assertEquals(100, result, '212F should be 100C');
+    }
+
+    @isTest
+    static void testNegativeTemperature() {
+        // 1. Arrange & Act
+        Decimal result = TemperatureConverter.fahrenheitToCelsius(-40);
+        
+        // 2. Assert
+        System.assertEquals(-40, result, '-40F should be -40C');
+    }
 }
