@@ -17,7 +17,7 @@ global class EmailToCaseHandler implements Messaging.InboundEmailHandler {
             );
             insert newCase;
 
-            System.debug('Case created with Id: ' + newCase.Id);
+            System.debug('Case Created with Id: ' + newCase.Id);
             result.success = true;
         } catch (Exception e) {
             System.debug('Error: ' + e.getMessage());
